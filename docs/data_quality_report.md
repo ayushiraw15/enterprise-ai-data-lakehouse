@@ -53,3 +53,15 @@
 - Carrier_Reliability_Score: float64
 - Lead_Time_Days: float64
 - Disruption_Occurred: int64
+
+# if column is numeric:
+    fill with mean
+
+# if column is categorical:
+    fill with mode
+
+# if Shipment_ID is missing:
+    drop the row
+
+# if duplicates exist:
+    remove duplicates
